@@ -71,6 +71,3 @@ for x in range(1, num+1):
     summation = summation + 1/factor
 print("e:", summation)
 print()
-
-# Collaboration
-# None
