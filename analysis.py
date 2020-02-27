@@ -65,18 +65,3 @@ if __name__ == '__main__':
     # print(len(centroids))
     data, label = read_data("data/mnist.csv")
     print(accuracy(data, label, centroids))
-
-
-# 1) What happened to the centroids? Why are there fewer than 10?
-#    There are now only 9 centroids. This is bacause there were centroids
-#    that were not closest to any point and the algorithm takes these out.
-#    This makes sense because the location of the centroids moved from where
-#    they were randomly initialized to a more meaningful space that corresponds
-#    to where the MNIST data is distributed.
-
-# 2) What's the accuracy of the algorithm on MNIST? By looking at the
-# centroids, which digits are easier to be distinguished by the algorithm,
-# and which are harder?
-#    The algorithm is 58.2% accurate on MNIST. This is to be expected when
-#    digits such as 3 and 8 or 5 and 6 look similar. Distinct looking digits,
-#    such as 0 and 1, are more easily recognized by the algorithm.
