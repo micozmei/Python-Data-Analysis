@@ -5,7 +5,6 @@ from utils import converged, plot_2d, plot_centroids, read_data, \
 import matplotlib.pyplot as plt
 
 
-# problem for students
 def euclidean_distance_between_data(dp1, dp2):
     """Calculate the Euclidean distance between two data points.
 
@@ -22,7 +21,6 @@ def euclidean_distance_between_data(dp1, dp2):
     return distance
 
 
-# problem for students
 def assign_data_to_closest_centroid(data_point, centroids):
     """Assign a single data point to the closest centroid. You should use
     euclidean_distance_between_data function (that you previously implemented).
@@ -46,7 +44,6 @@ def assign_data_to_closest_centroid(data_point, centroids):
     return closest
 
 
-# problem for students
 def update_assignment(data, centroids):
     """Assign all data points to the closest centroids. You should use
     assign_data_to_closest_centroid function (that you previously
@@ -71,7 +68,6 @@ def update_assignment(data, centroids):
     return point_assignment
 
 
-# problem for students
 def mean_of_points(data):
     """Calculate the mean of a given group of data points. You should NOT hard
     -code the dimensionality of the data points).
@@ -90,7 +86,6 @@ def mean_of_points(data):
     return mean_list
 
 
-# problem for students
 def update_centroids(assignment_dict):
     """Update centroid locations as the mean of all data points that belong
     to the cluster. You should use mean_of_points function (that you previously
@@ -109,9 +104,6 @@ def update_centroids(assignment_dict):
 
 
 def main_2d(data, init_centroids):
-    #######################################################
-    # You do not need to change anything in this function #
-    #######################################################
     centroids = init_centroids
     old_centroids = None
     step = 0
@@ -133,9 +125,6 @@ def main_2d(data, init_centroids):
 
 
 def main_mnist(data, init_centroids):
-    #######################################################
-    # You do not need to change anything in this function #
-    #######################################################
     centroids = init_centroids
     # plot initial centroids
     plot_centroids(centroids, "init")
