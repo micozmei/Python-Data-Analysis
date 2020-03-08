@@ -1,6 +1,3 @@
-# Mircea Cozmei
-# CSE 160 Homework 6
-
 import csv
 import random
 import matplotlib.pyplot as plt
