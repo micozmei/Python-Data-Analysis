@@ -11,6 +11,7 @@ def extract_election_vote_counts(filename, column_names):
     '''
     election_csv = open(filename)
     input_file = csv.DictReader(election_csv)
+    election_csv.close()
     vote_counts = []
     for row in input_file:  # skips first row
         for name in column_names:
